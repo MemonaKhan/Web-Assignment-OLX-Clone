@@ -1,0 +1,366 @@
+
+/* Header */
+
+.header{
+  background-color: #f1f1f1;
+  height: 70px;
+  box-shadow: 0px 2px 2px #dadada;
+  position: fixed;
+  display: flex;
+  z-index: 1;
+}
+.header .logo{
+  /* padding-top: 2px; */
+  margin-left: 2px;
+  margin-top: 20px;
+}
+.header img{
+  width: 50px;
+  /* padding: 2px; */
+}
+.header .icon-search{
+  font-weight: bold;
+  background-color: white;
+}
+.header .location, .header .search{
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.location, .search{
+  height: 50px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.location .label, .search .to-search{
+  /* text-align: center; */
+  font-size: 15px;
+  font-family: sans-serif;
+  height: 45px;
+  border: none;
+  /* margin-top: 10px; */
+}
+.location .label{
+  width: 150px;
+  background-color: white;
+  font-size: 15px;
+  color: black;
+}
+.location select option{
+  background-color: white;
+  /* padding-top: 30px; */
+}
+.location select:focus{
+  background-color: white !important;
+  outline: none !important;
+  border: none !important;
+}
+.search .to-search{
+  width: 600px;
+}
+.search .icon-search{
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.search button{
+  background-color: black !important;
+}
+.header .location button, .search button{
+  height: 45px;
+  width: 45px;
+  border: none;
+  background-color: white;
+}
+.header .location button:focus, .search button:focus{
+  outline: none;
+}
+.header .login{
+  display: flex;
+  margin: 15px 0px 0px 80px;
+  /* height: 50%; */
+  /* margin-left: 120px; */
+}
+.header .login .login-link{
+  margin-top: 5px;
+  color: black;
+  text-decoration: underline;
+}
+.header .login .login-link:hover{
+  text-decoration: none;
+}
+.header .login .sell{
+  font-weight: bolder;
+  margin-left: 20px;
+  border-radius: 40%;
+  height: 40px;
+  width: 80px;
+  background-color: white;
+  border-left: 5px solid rgb(255, 208, 0);
+  border-top: 5px solid aqua;
+  border-right: 5px solid rgb(0, 132, 255);
+  border-bottom: 5px solid rgb(0, 140, 255);
+}
+.header .login .sell:focus{
+  outline: none;
+}
+.header .login .sell:hover{
+box-shadow: 2px 2px 5px grey;
+}
+
+/* .loc-popup{
+  padding-left: 50px ;
+  background-color: white;
+  width: 80%;
+  z-index: 1;
+  position: absolute;
+} */
+
+
+
+/* Header Bar */
+
+.headerbar{
+  display: flex;
+  margin-top: 50px;
+  background-color: white;
+  padding: 10px;
+
+}
+.headerbar .categories{
+  display: flex;
+}
+.headerbar h5{
+  font-size: 15px;
+  font-weight: bolder;
+}
+.headerbar .categories button{
+  padding-top: 0px;
+  height: 25px;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+}
+.headerbar .categories button:focus{
+  outline: none;
+}
+.headerbar Link{
+  padding: 10px;
+}
+.headerbar .links{
+  padding-left: 20px;
+  color: black;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.headerbar .links:hover{
+  color: cadetblue;
+  text-decoration: none;
+}
+
+/* Show Categories */
+
+.categories-popup{
+  padding-left: 50px ;
+  background-color: white;
+  width: 80%;
+  z-index: 1;
+  position: absolute;
+}
+.categories-popup .link{
+  color: black;
+}
+.categories-popup .link:hover{
+  text-decoration: none;
+  color: cadetblue;
+}
+.categories-popup .link h6{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.categories-popup .link p{
+  padding: 0px;
+
+}
+
+
+
+
+/* Cards */
+
+.upper-cards{
+  margin: 50px 80px;
+  background-color: #f1f1f1;
+
+}
+.upper-cards h3, .cards h3{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.cards{
+  margin: 50px 80px;
+}
+.cards row{
+  padding-bottom: 20px;
+}
+
+/* One Card */
+
+.card{
+  width: 100%;
+  height: 250px;
+  padding: 10px;
+  background-color: white !important;
+  margin-bottom: 20px;
+}
+.card .image{
+  height: 150px;
+}
+.card h4{
+  color: black;
+  font-weight: bold;
+}
+.card .date{
+  text-align: right;
+  font-size: 12px;
+}
+
+.load{
+  text-align: center;
+  /* margin: auto; */
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.load-more{
+  
+  /* margin: auto 50%; */
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  padding: 5px;
+/* display: flex; */
+}
+.load-more:hover{
+  /* border: 3px solid black; */
+  box-shadow: inset 0px 0px 0px 2px black;
+}
+
+
+/* Footer Bar */
+.footer-bar{
+  background-color: #f1f1f1;
+}
+.footer-bar .advert{
+  margin: 20px 0px 50px 50px;
+}
+.footer-bar .advert h2{
+color: black;
+font-weight: bold;
+
+}
+.footer-bar .advert p{
+  font-size: 20px;
+
+}
+.footer-bar .apps{
+  margin: 30px 0px 30px 0px;
+  border-left: 1px solid gray;
+}
+.footer-bar .apps p{
+  margin: 20px 10px 20px 20px;
+  /* padding-top: 100px; */
+  font-size: 15px;
+  font-weight: bold;
+}
+.footer-bar .apps .app-links{
+  display: flex;
+
+}
+.footer-bar .apps .app-links img{
+cursor: pointer;
+width: 150px;
+padding: 10px;
+}
+
+/* Footer */
+
+
+.footer{
+  border: 0.5px solid grey;
+  background-color: #dadada;
+padding: 20px 0px 20px 40px;
+}
+.footer .links h6{
+  color: black;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+.footer .link{
+  display: block;
+  /* padding: 20px; */
+  color: black;
+  font-size: 12px;
+
+}
+.footer .apps .icons{
+  margin: 0px 10px 20px 30px;
+
+}
+.footer .apps p{
+  margin: 0px 10px 20px 30px;
+  /* padding-top: 100px; */
+  font-size: 15px;
+  font-weight: bold;
+}
+.footer .apps img{
+  margin: 0px 0px 0px 20px;
+  cursor: pointer;
+  width: 100px;
+  padding: 10px;
+}
+
+/* copyright */
+
+.copyright{
+  padding: 10px 0px 0px 50px;
+  height: 40px;
+  font-weight: bold;
+  background-color: darkslategray;
+  color: white;
+  font-size: 12px;
+}
+
+
+
+
+
+
+/* Scroll To Top */
+html{
+  scroll-behavior: smooth;
+}
+.scrollToTop{
+  font-size: 50px;
+  font-family: Courier;
+  text-align: center;
+}
+.scrolltop .icon-up{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: rgba(0,0,0,0.1);
+  color: white;
+  z-index: 99;
+}
+.scrolltop .icon-up:hover{
+  background-color: rgba(0,0,0,0.6);
+}
