@@ -18,6 +18,9 @@
   width: 50px;
   /* padding: 2px; */
 }
+.login-popup{
+  margin: 100px;
+}
 .header .icon-search{
   font-weight: bold;
   background-color: white;

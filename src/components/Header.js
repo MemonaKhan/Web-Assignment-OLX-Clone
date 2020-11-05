@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 
 import Select from '@material-ui/core/Select';
 
+import LoginPopup from '../containers/LoginPopup';
+
 
 class Header extends React.Component {
     render() {
@@ -33,7 +35,9 @@ class Header extends React.Component {
 
                     </div>
                     <div className="login">
-                        <Link to="/account/login" className="login-link">Login</Link>
+                        {/* <LoginPopup /> */}
+                        {/* <Link to="/login" className="login-link">Login</Link> */}
+                        <Link onClick="" className="login-link">Login</Link>
                         <button className="sell"><BsPlus />SELL</button>
                     </div>
                 </div>

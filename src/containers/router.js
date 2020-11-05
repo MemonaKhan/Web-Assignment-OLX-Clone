@@ -6,6 +6,7 @@ import {
   } from "react-router-dom";
   import Home from './Home'
   import Categories from './Categories'
+  import LoginPopup from './LoginPopup'
 
   class AppRouter extends React.Component{
       render(){
@@ -13,6 +14,7 @@ import {
               <Router>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/category" component={Categories}/>
+                <Route exact path="/login" component={LoginPopup}/>
               </Router>
           )
       }
