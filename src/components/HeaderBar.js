@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import HomeImage from '../img/homeImage.png'
 
 import CategoriesPopup from './CategoriesPopup'
 
@@ -55,9 +54,7 @@ class HeaderBar extends React.Component {
                         <CategoriesPopup className="categories-popup" />
                         : null
                 }
-                <div className="header-image">
-                    <img src={HomeImage} width="100%" />
-                </div>
+                
             </div>
         )
     }

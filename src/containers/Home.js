@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import HeaderBar from '../components/HeaderBar';
 import Card from '../components/Card';
 import CardCarousel from '../components/CardCarousel';
+import HomeImage from '../img/homeImage.png'
 
 import Footer from '../components/Footer';
 import FooterBar from '../components/FooterBar';
@@ -29,7 +30,9 @@ class HomePage extends React.Component {
         <Header />
         <br />
         <HeaderBar />
-        
+        <div className="header-image">
+                    <img src={HomeImage} width="100%" />
+                </div>
         <CardCarousel />
 
         <div className="cards">

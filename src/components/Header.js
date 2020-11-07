@@ -4,6 +4,9 @@ import LOGO from '../img/olx_logo.png';
 import { BsSearch, BsPlus, BsChevronDown, BsChevronUp } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
+import {connect} from 'react-redux';
+import {set_data,facebook_login} from '../store/action';
+
 import Select from '@material-ui/core/Select';
 
 import LoginPopup from '../containers/LoginPopup';
@@ -37,7 +40,7 @@ class Header extends React.Component {
                     <div className="login">
                         {/* <LoginPopup /> */}
                         {/* <Link to="/login" className="login-link">Login</Link> */}
-                        <Link onClick="" className="login-link">Login</Link>
+                        <Link onClick={()=>this.props.facebook_login()} className="login-link">Login</Link>
                         <button className="sell"><BsPlus />SELL</button>
                     </div>
                 </div>
@@ -46,4 +49,17 @@ class Header extends React.Component {
         )
     }
 }
-export default Header;
+
+
+const mapStateToProps = (state) => (
+    {
+      username: state.username
+    }
+  )
+  const mapDispatchToProps = (dispatch)=>({
+    set_data:()=>dispatch(set_data()),
+    facebook_login:()=>dispatch(facebook_login())
+  }
+  )
+  
+  export default connect(mapStateToProps,mapDispatchToProps)(Header);
