@@ -20,7 +20,7 @@ class Product extends React.Component {
     super()
 
     this.state = {
-      product: [{ image: Bike1, price: 42000, text: "kdmckdm kdmcdm", date: "Oct 14" }, { image: Bike1, price: 34200, text: "kdmckdm kdmcdm" }]
+
     }
   }
   render() {
@@ -30,6 +30,17 @@ class Product extends React.Component {
         <br />
         <HeaderBar />
         
+        <div className="container-fluid">
+          
+
+
+        </div>
+
+
+
+
+
+
         
         <div className="load"><button className="load-more">Load More</button></div>
 
